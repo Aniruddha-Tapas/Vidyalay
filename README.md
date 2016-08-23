@@ -13,6 +13,7 @@ At the moment, Class 1 tutorials are added.
 * Updated UI 
 * Tutorials for Class 2 - 12
 * General Knowledge tutorials
+
 All these will be updated in the next few days.
 
 <hr>
