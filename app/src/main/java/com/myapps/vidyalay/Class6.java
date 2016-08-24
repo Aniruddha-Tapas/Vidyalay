@@ -65,7 +65,7 @@ import java.util.Map;
  * rebuffering.
  */
 @TargetApi(13)
-public final class Class2 extends Activity implements OnFullscreenListener {
+public final class Class6 extends Activity implements OnFullscreenListener {
 
     /**
      * The duration of the animation sliding up the video in portrait.
@@ -96,7 +96,7 @@ public final class Class2 extends Activity implements OnFullscreenListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.video_list_class2);
+        setContentView(R.layout.video_list_class6);
 
         title = getIntent().getStringExtra("title");
         //setIntentTitle(title2);
@@ -229,92 +229,170 @@ public final class Class2 extends Activity implements OnFullscreenListener {
         private static final List<VideoEntry> VIDEO_LIST;
         static {
             List<VideoEntry> list = new ArrayList<VideoEntry>();
-			list.add(new VideoEntry("Class 2 English Chapter 1 Part 1", "VCd_oKvudi0"));
-			list.add(new VideoEntry("Class 2 English Chapter 1 Part 2", "_e5GOln8L4o"));
-			list.add(new VideoEntry("Class 2 English Chapter 1 Part 3", "E9PXx4YDX0A"));
-			list.add(new VideoEntry("Class 2 English Chapter 1 Part 4", "g-NV-qA6tvo"));
-			list.add(new VideoEntry("Class 2 English Chapter 1 Part 5", "COUhyWJR2nE"));
-			list.add(new VideoEntry("Class 2 English Chapter 1 Part 6", "XrmdIBic7Sg"));
-			list.add(new VideoEntry("Class 2 English Chapter 1 Part 7", "zfAdmL50nWM"));
-			list.add(new VideoEntry("Class 2 English Chapter 1 Part 8", "hF2sVWZ3uno"));
-			list.add(new VideoEntry("Class 2 English Chapter 1 Part 9", "qT-UHeXfna4"));
-			list.add(new VideoEntry("Class 2 English Chapter 1 Part 10", "vqMXCqmymjA"));
-			list.add(new VideoEntry("Class 2 English Chapter 1 Part 11", "n88UAczVN3M"));
-			list.add(new VideoEntry("Class 2 English Chapter 1 Part 12", "reAsCEu_ju8"));
-			list.add(new VideoEntry("Class 2 English Chapter 1 Part 13", "-bQvbPIcqdE"));
-			list.add(new VideoEntry("Class 2 English Chapter 2 Part 1", "T-Bf6xQtQl4"));
-			list.add(new VideoEntry("Class 2 English Chapter 3 Part 1", "opr5g4A1Uhw"));
-			list.add(new VideoEntry("Class 2 English Chapter 3 Part 2", "0gupFbEq9tg"));
-			list.add(new VideoEntry("Class 2 English Chapter 3 Part 3", "dG6GtVzGoXc"));
-			list.add(new VideoEntry("Class 2 English Chapter 4 Part 1", "mAKiJljoVqE"));
-			list.add(new VideoEntry("Class 2 English Chapter 4 Part 2", "dexwn27oNS4"));
-			list.add(new VideoEntry("Class 2 English Chapter 5 Part 1", "N_l0jwUUBLI"));
-			list.add(new VideoEntry("Class 2 English Chapter 5 Part 2", "XpWXl3hmtwo"));
-			list.add(new VideoEntry("Class 2 English Chapter 6 Part 1", "9BSNhHYzTH8"));
-			list.add(new VideoEntry("Class 2 English Chapter 6 Part 2", "a1SpY_WRMoY"));
-			list.add(new VideoEntry("Class 2 English Chapter 6 Part 3", "TtYJ0lssci0"));
-			list.add(new VideoEntry("Class 2 English Chapter 6 Part 4", "qlYuEiuTu6A"));
-			list.add(new VideoEntry("Class 2 English Chapter 6 Part 5", "0CinFVyi-H0"));
-			list.add(new VideoEntry("Class 2 English Chapter 7 Part 1", "3uMfg5ad23k"));
-			list.add(new VideoEntry("Class 2 English Chapter 8 Part 1", "hFpqXgkEl-I"));
-			list.add(new VideoEntry("Class 2 English Chapter 8 Part 2", "Nt8gbfBnhSI"));
-			list.add(new VideoEntry("Class 2 English Chapter 8 Part 3", "9v7CfOOU6tk"));
-			list.add(new VideoEntry("Class 2 English Chapter 9 Part 1", "oarRGjK_Fo0"));
-			list.add(new VideoEntry("Class 2 English Chapter 10 Part 1", "Y-_3YJtJ06M"));
-			list.add(new VideoEntry("Class 2 English Chapter 10 Part 2", "wBgaP01ycYQ"));
-			list.add(new VideoEntry("Class 2 English Chapter 11 Part 1", "YCHiTKhYrF4"));
-			list.add(new VideoEntry("Class 2 English Chapter 11 Part 2", "_TOWm_-MH7A"));
-			list.add(new VideoEntry("Class 2 English Chapter 12 Part 1", "JkJLhMHC-xk"));
-			list.add(new VideoEntry("Class 2 English Phonetic's Video Part 1", "5AARiFcUMWc"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 1", "dDFkV7SPTVo"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 2", "AByN5K3j4G0"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 3", "3d28V4p_22E"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 4", "EdkcXofmPR8"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 5", "3mS_oizjBZc"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 6", "ACmY9otiI2s"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 7", "rrRbYRbxTeE"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 8 Part 1", "XTHw7zHBxFc"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 8 Part 2", "9x_4aqLnGBs"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 9", "B-g-pNNzvUA"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 10", "IkJ8H5GP2D4"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 11", "3iuxGnC4Rpc"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 12", "mTEXEkELCWk"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 13", "n2S2FoTJA3A"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 14 Part 1", "oek4TjmbK4Q"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 14 Part 2", "mOMVwZgHrfI"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 15", "a101DNiXaT0"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 16", "TB761e8raDY"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 17 Part 1", "QWZ6NLOvsRk"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 17 Part 2", "ajXSnZhRgc8"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 18", "ump_eELHvEU"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 19 Part 1", "mfcbXzPgNcU"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 19 Part 2", "UKS7-G4pa1o"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 20", "9X0axC4TjZY"));
-			list.add(new VideoEntry("Class 2 Hindi Chapter 21", "vkVmdUMmOUw"));
+			list.add(new VideoEntry("Class 6 English Chapter 1 Part 1", "4gq2D0bYyXE"));
+			list.add(new VideoEntry("Class 6 English Chapter 1 Part 2", "mR5PWvUCWTU"));
+			list.add(new VideoEntry("Class 6 English Chapter 2 Part 1", "VAlWBM_WduQ"));
+			list.add(new VideoEntry("Class 6 English Chapter 2 Part 2", "1VEbE1JHn6A"));
+			list.add(new VideoEntry("Class 6 English Chapter 3", "jPxReGzB2Pg"));
+			list.add(new VideoEntry("Class 6 English Chapter 4 Part 1", "7jIjbRA90EE"));
+			list.add(new VideoEntry("Class 6 English Chapter 4 Part 2", "FA7ezx699Js"));
+			list.add(new VideoEntry("Class 6 English Chapter 5", "rUhl1MU0eCw"));
+			list.add(new VideoEntry("Class 6 English Chapter 6", "5LbQwLzPkD4"));
+			list.add(new VideoEntry("Class 6 English Chapter 6 Part 1", "CERXMI8hexc"));
+			list.add(new VideoEntry("Class 6 English Chapter 7 Part 1", "UUwzI09GqB8"));
+			list.add(new VideoEntry("Class 6 English Chapter 7 Part 2", "l83kPVsy9pI"));
+			list.add(new VideoEntry("Class 6 English Chapter 8 Part 1", "wNMIsLFrYKs"));
+			list.add(new VideoEntry("Class 6 English Chapter 8 Part 2", "S-R6QUkG10Y"));
+			list.add(new VideoEntry("Class 6 English Chapter 9", "AmAaifvpEzE"));
+			list.add(new VideoEntry("Class 6 English Chapter 10 Part 1", "5E2compP-zY"));
+			list.add(new VideoEntry("Class 6 English Chapter 10 Part 2", "H9NWJZTHUmw"));
+			list.add(new VideoEntry("Class 6 English Chapter 11 Part 1", "FZavS6YOAqI"));
+			list.add(new VideoEntry("Class 6 English Chapter 11 Part 2", "9MdoaYfkcIM"));
+			list.add(new VideoEntry("Class 6 English Chapter 13 Part 1", "bGTlJO9Y1aY"));
+			list.add(new VideoEntry("Class 6 English Chapter 13 Part 2", "v-UdRWOmnW8"));
+			list.add(new VideoEntry("Class 6 English Chapter 14 Part 1", "3fBRA9YRsU8"));
+			list.add(new VideoEntry("Class 6 English Chapter 14 Part 2", "cR7G24WVmqA"));
+			list.add(new VideoEntry("Class 6 English Chapter 15", "eFIjvTTJCww"));
+			list.add(new VideoEntry("Class 6 English Chapter 16 Part 1", "CwIn5fPQTcw"));
+			list.add(new VideoEntry("Class 6 English Chapter 16 Part 2", "CwzIAF1I6gY"));
+			list.add(new VideoEntry("Class 6 English Chapter 17 Part 1", "hnIJw2GUplM"));
 
-			list.add(new VideoEntry("Class 2 Maths Chapter 3 Part 4", "89UxBNmCPv0"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 4 Part 1", "cFrmoFWTS6w"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 4 Part 1", "fxk60Afglic"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 4 Part 2.", "kvmW2C2BOc8"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 5 Part 1", "yN5-oCgIEFk"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 6 Part 1", "MdpRpGL6hUg"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 7 Part 1", "w8xdTPeo2yc"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 8 Part 1", "5cpZKSOTQj8"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 8 Part 2", "_4636ThMJtw"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 9 Part 1", "fS0c4V7MlgA"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 10 Part 1", "dqwev8SNha0"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 10 Part 2", "TuTVzZLkKiY"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 11 Part 1", "J_VtsrWUM40"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 11 Part 2", "16i9Nb97buo"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 13 Part 1", "BF4tlm3tHVc"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 13 Part 2", "e5nnmEPwKLk"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 14 Part 1", "eb8IHjNYU20"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 14 Part 2", "DBC8_sR8q3w"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 15 Part 1", "GHnpZFrpiPc"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 15 Part 2", "iPAW2tS8bzo"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 16 Part 1", "W39uLbvBKkY"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 17 Part 1", "M851PxDvDUI"));
-			list.add(new VideoEntry("Class 2 Maths Chapter 17 Part 2", "Cv5AXcGOWpY"));
+			list.add(new VideoEntry("Class 6 Geography Chapter 1 Part 1", "JOb7d34nLis"));
+			list.add(new VideoEntry("Class 6 Geography Chapter 2 Part 1", "Y1p4CywoNps"));
+			list.add(new VideoEntry("Class 6 Geography Chapter 3 Part 1", "_2zZwHbmc-k"));
+			list.add(new VideoEntry("Class 6 Geography Chapter 4 Part 1", "SrZ8WNDJBTM"));
+			list.add(new VideoEntry("Class 6 Geography Chapter 4 Part 2", "iHgBLM-n22A"));
+			list.add(new VideoEntry("Class 6 Geography Chapter 5 Part 1", "TwkZ_Lp1TeU"));
+			list.add(new VideoEntry("Class 6 Geography Chapter 6 Part 1", "98Xw9yzYcvA"));
+			list.add(new VideoEntry("Class 6 Geography Chapter 6 Part 2", "1mrHa-FqIWo"));
+			list.add(new VideoEntry("Class 6 Geography Chapter 7 Part 1", "HpqmZFDJWBI"));
+			list.add(new VideoEntry("Class 6 Geography Chapter 8 Part 1", "5m91D78BTh4"));
+			list.add(new VideoEntry("Class 6 Geography Chapter 8 Part 2", "UJvPUoGkuwM"));
+			list.add(new VideoEntry("Class 6 Geography Chapter 9 Part 1", "-4uY7_TOP50"));
+			list.add(new VideoEntry("Class 6 Geography Chapter 10 Part 1", "UFb_-HV-Dac"));
+			list.add(new VideoEntry("Class 6 Geography Chapter 10 Part 2", "o0bhWL1Z-fI"));
+
+			list.add(new VideoEntry("Class 6 Hindi Chapter 1 Part 1", "EZf0tvmH-UA"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 2 Part 1", "p9ZQZut1q9c"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 3 Part 1", "WBuiPmeRDgs"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 4 Part 2", "xWTVZxZVq04"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 5 Part 1", "IcNkEfz4hcw"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 6 Part 1", "x71Hn94N20Y"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 7 Part 1", "4gQlb7uCnpI"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 8 Part 1", "3AsZ3sKzeu4"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 9 Part 1", "w8DBwiPHq8Q"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 10 Part 1", "gGtDNgP3uTI"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 11 Part 1", "ttvjKuOlccY"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 12 Part 1", "uPnSnJ3BmKI"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 13 Part 1", "_rbYVtgLUHc"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 14 Part 1", "khAv9aQGTto"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 15 Part 1", "xAjMDK-_j5Q"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 16 Part 1", "lRWInFMqnv4"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 17 Part 1", "peotny70M2A"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 19 Part 1", "QO7RNLH7naM"));
+			list.add(new VideoEntry("Class 6 Hindi Chapter 20 Part 1", "b4RogsIdBXM"));
+
+			list.add(new VideoEntry("Class 6 Maths Algebra Chapter 1 Part 1", "apWwE76hirI"));
+			list.add(new VideoEntry("Class 6 Maths Algebra Chapter 1 Part 2", "BT-g4k6Gorw"));
+			list.add(new VideoEntry("Class 6 Maths Algebra Chapter 1 Part 3", "nhAzfie7O4s"));
+			list.add(new VideoEntry("Class 6 Maths Algebra Chapter 1 Part 4", "P2FVsQYK2jM"));
+			list.add(new VideoEntry("Class 6 Maths Algebra Chapter 2 Part 1", "phYF1l9l7fo"));
+			list.add(new VideoEntry("Class 6 Maths Algebra Chapter 2 Part 2", "yURmH0RBEx8"));
+			list.add(new VideoEntry("Class 6 Maths Algebra Chapter 2 Part 3", "VMdF_D1l9SY"));
+			list.add(new VideoEntry("Class 6 Maths Algebra Chapter 2 Part 4", "jWoo3ZGPk1I"));
+			list.add(new VideoEntry("Class 6 Maths Algebra Chapter 2 Part 5", "lsj4wprYEuE"));
+			list.add(new VideoEntry("Class 6 Maths Algebra Chapter 3 Part 1", "5b-dz0JJgNI"));
+			list.add(new VideoEntry("Class 6 Maths Algebra Chapter 3 Part 2", "AQvgGQfc34M"));
+			list.add(new VideoEntry("Class 6 Maths Algebra Chapter 3 Part 3", "a27u8tnjYME"));
+			list.add(new VideoEntry("Class 6 Maths Algebra Chapter 3 Part 4", "Cmh6Y2Crqos"));
+
+			list.add(new VideoEntry("Class 6 Maths Chapter 1 Part 1", "S3o01DHMrvw"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 1 Part 2", "iF0KiQ2pXZ4"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 1 Part 3", "IlBgqLsDjPQ"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 2 Part 1", "8VwYg8Nj4gg"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 2 Part 2", "BrGzx14ooBU"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 2 Part 3", "bNB62NY_V5A"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 3 Part 1", "9bhDpuE56t4"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 3 Part 2", "xQEEPKGCxdA"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 3 Part 3", "0ivh9cdhndc"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 3 Part 4", "YROJ_q-xdTk"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 3 Part 5", "HYWAd2c7zkE"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 4  Part 1", "HYtq8EZ4RYk"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 4  Part 10", "l5BGT93TlFg"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 4  Part 11", "P8voffRz9SE"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 4  Part 12", "_FHxCJlpnPQ"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 4  Part 2", "WEpQ9nQkPTU"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 4  Part 3", "qcYFCYaR5lA"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 4  Part 4", "oBYK4IqX1tU"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 4  Part 5", "ZpU0HxeqCKs"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 4  Part 6", "sCVHl7voRJA"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 4  Part 7", "BqMJ_AFC_NE"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 4  Part 8", "YXHDToa2tRw"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 4  Part 9", "syU7PqqMwFc"));
+			list.add(new VideoEntry("Class 6 Maths Chapter 5", "3PEVDC-Q1Oo"));
+
+			list.add(new VideoEntry("Class 6 Maths Geometry Chapter 1", "mcp-slYYxKo"));
+			list.add(new VideoEntry("Class 6 Maths Geometry Chapter 2 Part 1", "cbBpWWd-H7o"));
+			list.add(new VideoEntry("Class 6 Maths Geometry Chapter 2 Part 2", "DisGOcDK1sE"));
+			list.add(new VideoEntry("Class 6 Maths Geometry Chapter 3 Part 1", "4oMs9Cu8DhI"));
+			list.add(new VideoEntry("Class 6 Maths Geometry Chapter 3 Part 2", "X-opyxPKUpU"));
+			list.add(new VideoEntry("Class 6 Maths Geometry Chapter 4 Part 1", "j_L9g1oLmvw"));
+			list.add(new VideoEntry("Class 6 Maths Geometry Chapter 4 Part 2", "XJGcg5Yprzk"));
+			list.add(new VideoEntry("Class 6 Maths Geometry Chapter 5 Part 1", "TKt5qJC8BkI"));
+			list.add(new VideoEntry("Class 6 Maths Geometry Chapter 5 Part 2", "BdUmFCt6sAg"));
+			list.add(new VideoEntry("Class 6 Maths Geometry Chapter 6 Part 1", "Q5TvWYvhct8"));
+			list.add(new VideoEntry("Class 6 Maths Geometry Chapter 6 Part 2", "yjYtogoBvlM"));
+			list.add(new VideoEntry("Class 6 Maths Geometry Chapter 6 Part 3", "RSYCfX51zwc"));
+			list.add(new VideoEntry("Class 6 Maths Geometry Chapter 7 Part 1", "oNYglfoEoZA"));
+			list.add(new VideoEntry("Class 6 Maths Geometry Chapter 7 Part 2", "Rs606BfeV3Q"));
+			list.add(new VideoEntry("Class 6 Maths geometry Chapter 5 Part 1", "P7uqWr3NlYM"));
+
+			list.add(new VideoEntry("Class 6 Science Chapter 1 Part 1", "iP0zyOxEGSY"));
+			list.add(new VideoEntry("Class 6 Science Chapter 1 Part 1", "TLLLeBoPiOg"));
+			list.add(new VideoEntry("Class 6 Science Chapter 1 Part 2", "3N83Yhfr7ZY"));
+			list.add(new VideoEntry("Class 6 Science Chapter 1 Part 2", "AvVIwoqlf0Q"));
+			list.add(new VideoEntry("Class 6 Science Chapter 2 Part 1", "KUF2sQQBnvM"));
+			list.add(new VideoEntry("Class 6 Science Chapter 2 Part 2", "1Z94wgWEGiU"));
+			list.add(new VideoEntry("Class 6 Science Chapter 3 Part 1", "TiNkbQfLQLk"));
+			list.add(new VideoEntry("Class 6 Science Chapter 3 Part 2", "zm8Kj_1L6Ok"));
+			list.add(new VideoEntry("Class 6 Science Chapter 3 Part 3", "JKPY11IjcE0"));
+			list.add(new VideoEntry("Class 6 Science Chapter 4 Part 1", "nmHUZm2GYIc"));
+			list.add(new VideoEntry("Class 6 Science Chapter 4 Part 2", "uKBdFHQGKWg"));
+			list.add(new VideoEntry("Class 6 Science Chapter 5", "2g8068l3x9c"));
+			list.add(new VideoEntry("Class 6 Science Chapter 6 Part 1", "RvLGi9aCNns"));
+			list.add(new VideoEntry("Class 6 Science Chapter 6 Part 2", "zYVXpUpwB4U"));
+			list.add(new VideoEntry("Class 6 Science Chapter 6 Part 3", "9B3Ye1m_DM4"));
+			list.add(new VideoEntry("Class 6 Science Chapter 6 Part 4", "uAcS8zgzJbk"));
+			list.add(new VideoEntry("Class 6 Science Chapter 6 Part 5", "6ZbGRXcIFXw"));
+			list.add(new VideoEntry("Class 6 Science Chapter 6 Part 5", "J3yEHi5z7mY"));
+			list.add(new VideoEntry("Class 6 Science Chapter 7 Part 1", "zKrmNKHWGFg"));
+			list.add(new VideoEntry("Class 6 Science Chapter 7 Part 2", "HcPCCeuEbiA"));
+			list.add(new VideoEntry("Class 6 Science Chapter 7 Part 3", "NiV234LBzow"));
+			list.add(new VideoEntry("Class 6 Science Chapter 7 Part 4", "w2HC85hS678"));
+			list.add(new VideoEntry("Class 6 Science Chapter 7 Part 5", "feqn5apgsXY"));
+			list.add(new VideoEntry("Class 6 Science Chapter 7 Part 6", "eticgTw8o4Q"));
+			list.add(new VideoEntry("Class 6 Science Chapter 7 Part 7", "7l0Je9ug2RE"));
+			list.add(new VideoEntry("Class 6 Science Chapter 7 Part 8", "Z6wSNpZymB4"));
+			list.add(new VideoEntry("Class 6 Science Chapter 8 Part 1", "VyzwGaPPCdo"));
+			list.add(new VideoEntry("Class 6 Science Chapter 8 Part 10", "--y2bqMd6mk"));
+			list.add(new VideoEntry("Class 6 Science Chapter 8 Part 2", "_Cb4lxIsbz4"));
+			list.add(new VideoEntry("Class 6 Science Chapter 8 Part 3", "nCz3tVpWvU8"));
+			list.add(new VideoEntry("Class 6 Science Chapter 8 Part 4", "AFoPpzTzP_8"));
+			list.add(new VideoEntry("Class 6 Science Chapter 8 Part 5", "s-XPFtrw3Qs"));
+			list.add(new VideoEntry("Class 6 Science Chapter 8 Part 6", "O0-LgCLtlb8"));
+			list.add(new VideoEntry("Class 6 Science Chapter 8 Part 7", "v2rEms3hIzY"));
+			list.add(new VideoEntry("Class 6 Science Chapter 8 Part 8", "xD7A8KdRlsY"));
+			list.add(new VideoEntry("Class 6 Science Chapter 8 Part 9", "fxH7pfgmBtU"));
+			list.add(new VideoEntry("Class 6 Science Chapter 9 Part 1", "n_F1ATv0XGg"));
+			list.add(new VideoEntry("Class 6 Science Chapter 9 Part 2", "RkavaRrxODk"));
+			list.add(new VideoEntry("Class 6 Science Chapter 10 Part 1", "JMtr8pNDbm8"));
+			list.add(new VideoEntry("Class 6 Science Chapter 10 Part 2", "bJeoZjY-z2c"));
+			list.add(new VideoEntry("Class 6 Science Chapter 10 Part 3", "hytXI5gcxvs"));
+			list.add(new VideoEntry("Class 6 Science Chapter 11 Part 1", "cgDflRGycKE"));
+			list.add(new VideoEntry("Class 6 Science Chapter 11 Part 2", "lEekkRwQVJ4"));
+			list.add(new VideoEntry("Class 6 Science Chapter 12 Part 1", "HLZ6YBQjy3k"));
+			list.add(new VideoEntry("Class 6 Science Chapter 12 Part 2", "qjeNq8k6geE"));
+			list.add(new VideoEntry("Class 6 Science Chapter 12 Part 3", "BL1PVh2QjiQ"));
             VIDEO_LIST = Collections.unmodifiableList(list);
         }
         private PageAdapter adapter;
@@ -327,9 +405,10 @@ public final class Class2 extends Activity implements OnFullscreenListener {
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
 
-            Class2 obj = new Class2();
+            Class6 obj = new Class6();
             title3 = obj.getIntentTitle();
-			adapter = new PageAdapter(getActivity(), VIDEO_LIST);
+
+            adapter = new PageAdapter(getActivity(), VIDEO_LIST);
         }
 
         @Override
@@ -539,7 +618,7 @@ public final class Class2 extends Activity implements OnFullscreenListener {
         public void onInitializationSuccess(Provider provider, YouTubePlayer player, boolean restored) {
             this.player = player;
             player.addFullscreenControlFlag(YouTubePlayer.FULLSCREEN_FLAG_CUSTOM_LAYOUT);
-            player.setOnFullscreenListener((Class2) getActivity());
+            player.setOnFullscreenListener((Class6) getActivity());
             if (!restored && videoId != null) {
                 player.cueVideo(videoId);
             }

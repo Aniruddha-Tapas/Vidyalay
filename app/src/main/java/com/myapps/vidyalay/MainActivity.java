@@ -40,25 +40,32 @@ public class MainActivity extends Activity {
                         break;
 
                     case "Image#1":
-                        Toast.makeText(getApplicationContext(), "Tutorials for Class 2 : Coming soon", Toast.LENGTH_SHORT).show();
+                        Intent intent2 = new Intent(MainActivity.this, Class2.class);
+                        startActivity(intent2);
                         break;
                     case "Image#2":
-                        Toast.makeText(getApplicationContext(), "Tutorials for Class 3 : Coming soon", Toast.LENGTH_SHORT).show();
+                        Intent intent3 = new Intent(MainActivity.this, Class3.class);
+                        startActivity(intent3);
                         break;
                     case "Image#3":
-                        Toast.makeText(getApplicationContext(), "Tutorials for Class 4 : Coming soon", Toast.LENGTH_SHORT).show();
+                        Intent intent4 = new Intent(MainActivity.this, Class4.class);
+                        startActivity(intent4);
                         break;
                     case "Image#4":
-                        Toast.makeText(getApplicationContext(), "Tutorials for Class 5 : Coming soon", Toast.LENGTH_SHORT).show();
+                        Intent intent5 = new Intent(MainActivity.this, Class5.class);
+                        startActivity(intent5);
                         break;
                     case "Image#5":
-                        Toast.makeText(getApplicationContext(), "Tutorials for Class 6 : Coming soon", Toast.LENGTH_SHORT).show();
+                        Intent intent6 = new Intent(MainActivity.this, Class6.class);
+                        startActivity(intent6);
                         break;
                     case "Image#6":
-                        Toast.makeText(getApplicationContext(), "Tutorials for Class 7 : Coming soon", Toast.LENGTH_SHORT).show();
+                        Intent intent7 = new Intent(MainActivity.this, Class7.class);
+                        startActivity(intent7);
                         break;
                     case "Image#7":
-                        Toast.makeText(getApplicationContext(), "Tutorials for Class 8 : Coming soon", Toast.LENGTH_SHORT).show();
+                        Intent intent8 = new Intent(MainActivity.this, Class8.class);
+                        startActivity(intent8);
                         break;
                     case "Image#8":
                         Toast.makeText(getApplicationContext(), "Tutorials for Class 9 : Coming soon", Toast.LENGTH_SHORT).show();
