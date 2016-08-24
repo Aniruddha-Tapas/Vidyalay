@@ -5,13 +5,13 @@
 An Android App which provides education for everyone from students to women alike, in Hindi.
 
 Youtube Channel : DSHonline provides the tutorial content.
-At the moment, Class 1 tutorials are added. 
+At the moment, Tutorials for Class 1 - 8 are added. 
 
 <hr>
 
 ### Coming Soon: 
 * Updated UI 
-* Tutorials for Class 2 - 12
+* Tutorials for Class 9 - 12
 * General Knowledge tutorials
 
 All these will be updated in the next few days.
