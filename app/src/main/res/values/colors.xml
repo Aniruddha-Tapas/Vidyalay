@@ -15,7 +15,34 @@
   limitations under the License.
 -->
 <resources>
+
     <color name="gray">#ff888888</color>
-    <color name="blue">#00abea</color>
+    <color name="blue">#1a237e</color>
     <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#1A237E</color>
+    <color name="colorAccent">#01579B</color>
+    <color name="colorPrimaryLight">#64B5F6</color>
+    <color name="colorSecondary">#FF82B1EE</color>
+    <color name="colorSecondaryDark">#FF82B1FF</color>
+
+    <color name="body_text_1">#deffffff</color>
+    <color name="body_text_2">#8affffff</color>
+    <color name="body_text_3">#60ffffff</color>
+    <color name="body_text_disabled">#44ffffff</color>
+
+    <color name="body_text_1_inverse">#de000000</color>
+    <color name="body_text_2_inverse">#8a000000</color>
+
+
+    <!-- color card -->
+    <color name="demo_card_background_color1">#FF4343</color>
+    <color name="demo_card_background_color2">#006064</color>
+    <color name="demo_card_background_color3">#FFBB33</color>
+    <color name="demo_card_background_color4">#2196F3</color>
+
 </resources>

@@ -4,8 +4,10 @@
 
 An Android App which provides education for everyone from students to women alike, in Hindi.
 
-Youtube Channel : DSHonline provides the tutorial content.
-At the moment, Tutorials for Class 1 - 8 are added. 
+* Youtube Channel : <a href="https://www.youtube.com/user/DSHOnline">DSHonline</a> provides the tutorial content for Class 1 - 8 
+* <a href="https://www.digitalgreen.org/">DigitalGreen</a> provides the educational content in the field of agriculture, health and nutrition
+* <a href="http://aaoseekho.com/index.php">AaoSeekho</a> provides online tutorials to learn English in the native language Hindi
+* <a href="http://computerseekho.com/compbasics.php">ComputerSeekho</a> website provides tutorials to understand the basics operations on a computer
 
 <hr>
 
@@ -13,8 +15,6 @@ At the moment, Tutorials for Class 1 - 8 are added.
 * Updated UI 
 * Tutorials for Class 9 - 12
 * General Knowledge tutorials
-
-All these will be updated in the next few days.
 
 <hr>
 

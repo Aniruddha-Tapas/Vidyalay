@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="app_name">Vidyalyay</string>
+    <string name="app_name">Vidyalay</string>
 
     <string name="videolist_demo_name">Class 1</string>
     <string name="videolist_class2">Class 2</string>
@@ -61,6 +61,8 @@
 
     <string name="error_thumbnail_view">There was an error initializing the YouTubeThumbnailView (%1$s)</string>
     <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="education">Education</string>
+    <string name="webviewactivity">webviewactivty</string>
 
     <string-array name="image_ids">
         <item>@drawable/image_1</item>

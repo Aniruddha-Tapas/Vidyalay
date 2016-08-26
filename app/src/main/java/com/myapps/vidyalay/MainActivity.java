@@ -1,92 +1,146 @@
 package com.myapps.vidyalay;
 
-import java.util.ArrayList;
-
-import android.app.Activity;
+import android.support.graphics.drawable.VectorDrawableCompat;
+import android.support.v4.content.res.ResourcesCompat;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.content.Intent;
 import android.os.Bundle;
-import android.content.res.TypedArray;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.GridView;
-import android.widget.Toast;
 
-public class MainActivity extends Activity {
-    private GridView gridView;
-    private GridViewAdapter gridAdapter;
+import java.util.ArrayList;
+
+import it.gmariotti.cardslib.library.internal.Card;
+import it.gmariotti.cardslib.library.internal.CardArrayAdapter;
+import it.gmariotti.cardslib.library.internal.CardHeader;
+import it.gmariotti.cardslib.library.internal.CardThumbnail;
+import it.gmariotti.cardslib.library.view.CardListView;
+
+public class MainActivity extends AppCompatActivity {
+
+    private Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.home);
 
-        gridView = (GridView) findViewById(R.id.gridView);
-        gridAdapter = new GridViewAdapter(this, R.layout.grid_item_layout, getData());
-        gridView.setAdapter(gridAdapter);
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mToolbar);
+        // Adding menu icon to Toolbar
+        ActionBar actionBar = getSupportActionBar();
+        assert actionBar != null;
+        actionBar.setIcon(R.mipmap.ic_launcher);
+        actionBar.setTitle("  Vidyalay  |  विद्यालय ");
 
-        gridView.setOnItemClickListener(new OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-                ImageItem item = (ImageItem) parent.getItemAtPosition(position);
+        int listImages[] = new int[]{R.drawable.education, R.drawable.agriculture,
+                R.drawable.english, R.drawable.computer};
 
-                //Create intent
-                switch (item.getTitle()) {
+        ArrayList<Card> cards = new ArrayList<Card>();
 
-                    case "Image#0":
-                        Intent intent = new Intent(MainActivity.this, Class1.class);
-                        startActivity(intent);
-                        break;
+        Card card = new Card(this, R.layout.row_card);
+        // Create a CardHeader
+        CardHeader header = new CardHeader(this);
+        // Add Header to card
+        header.setTitle("शिक्षण");
+        card.setTitle("Education");
+        card.addCardHeader(header);
+        //Add Thumbnail
+        CardThumbnail thumb = new CardThumbnail(this);
+        thumb.setDrawableResource(listImages[0]);
+        card.addCardThumbnail(thumb);
+        card.setBackgroundResourceId(R.drawable.demo_card_selector_color1);
+        card.setShadow(true);
+        cards.add(card);
 
-                    case "Image#1":
-                        Intent intent2 = new Intent(MainActivity.this, Class2.class);
-                        startActivity(intent2);
-                        break;
-                    case "Image#2":
-                        Intent intent3 = new Intent(MainActivity.this, Class3.class);
-                        startActivity(intent3);
-                        break;
-                    case "Image#3":
-                        Intent intent4 = new Intent(MainActivity.this, Class4.class);
-                        startActivity(intent4);
-                        break;
-                    case "Image#4":
-                        Intent intent5 = new Intent(MainActivity.this, Class5.class);
-                        startActivity(intent5);
-                        break;
-                    case "Image#5":
-                        Intent intent6 = new Intent(MainActivity.this, Class6.class);
-                        startActivity(intent6);
-                        break;
-                    case "Image#6":
-                        Intent intent7 = new Intent(MainActivity.this, Class7.class);
-                        startActivity(intent7);
-                        break;
-                    case "Image#7":
-                        Intent intent8 = new Intent(MainActivity.this, Class8.class);
-                        startActivity(intent8);
-                        break;
-                    case "Image#8":
-                        Toast.makeText(getApplicationContext(), "Tutorials for Class 9 : Coming soon", Toast.LENGTH_SHORT).show();
-                        break;
-
-
-                }
+        card.setOnClickListener(new Card.OnCardClickListener() {
+            @Override
+            public void onClick(Card card, View view) {
+                Intent intent = new Intent(MainActivity.this, Education.class);
+                startActivity(intent);
             }
         });
+
+        Card card2 = new Card(this, R.layout.row_card);
+        // Create a CardHeader
+        CardHeader header2 = new CardHeader(this);
+        // Add Header to card
+        header2.setTitle("कृषि");
+        card2.setTitle("Agriculture");
+        card2.addCardHeader(header2);
+        //Add Thumbnail
+        CardThumbnail thumb2 = new CardThumbnail(this);
+        thumb2.setDrawableResource(listImages[1]);
+        card2.addCardThumbnail(thumb2);
+        card2.setBackgroundResourceId(R.drawable.demo_card_selector_color2);
+        card2.setShadow(true);
+        cards.add(card2);
+
+        card2.setOnClickListener(new Card.OnCardClickListener() {
+            @Override
+            public void onClick(Card card, View view) {
+                Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+                intent.putExtra("option",2);
+                startActivity(intent);
+            }
+        });
+
+        Card card3 = new Card(this, R.layout.row_card);
+        // Create a CardHeader
+        CardHeader header3 = new CardHeader(this);
+        // Add Header to card
+        header3.setTitle("अंग्रेज़ी");
+        card3.setTitle("English");
+        card3.addCardHeader(header3);
+        //Add Thumbnail
+        CardThumbnail thumb3 = new CardThumbnail(this);
+        thumb3.setDrawableResource(listImages[2]);
+        card3.addCardThumbnail(thumb3);
+        card3.setBackgroundResourceId(R.drawable.demo_card_selector_color3);
+        card3.setShadow(true);
+        cards.add(card3);
+
+        card3.setOnClickListener(new Card.OnCardClickListener() {
+            @Override
+            public void onClick(Card card, View view) {
+                Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+                intent.putExtra("option",3);
+                startActivity(intent);
+            }
+        });
+
+        Card card4 = new Card(this, R.layout.row_card);
+        // Create a CardHeader
+        CardHeader header4 = new CardHeader(this);
+        // Add Header to card
+        header4.setTitle("कंप्यूटर");
+        card4.setTitle("Computer");
+        card4.addCardHeader(header4);
+        //Add Thumbnail
+        CardThumbnail thumb4 = new CardThumbnail(this);
+        thumb4.setDrawableResource(listImages[3]);
+        card4.addCardThumbnail(thumb4);
+        card4.setBackgroundResourceId(R.drawable.demo_card_selector_color4);
+        card4.setShadow(true);
+        cards.add(card4);
+
+        card4.setOnClickListener(new Card.OnCardClickListener() {
+            @Override
+            public void onClick(Card card, View view) {
+                Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+                intent.putExtra("option",4);
+                startActivity(intent);
+            }
+        });
+
+        CardArrayAdapter mCardArrayAdapter = new CardArrayAdapter(this, cards);
+
+        CardListView listView = (CardListView) this.findViewById(R.id.myList);
+        if (listView != null) {
+            listView.setAdapter(mCardArrayAdapter);
+        }
+
     }
 
-    /**
-     * Prepare some dummy data for gridview
-     */
-    private ArrayList<ImageItem> getData() {
-        final ArrayList<ImageItem> imageItems = new ArrayList<>();
-        TypedArray imgs = getResources().obtainTypedArray(R.array.image_ids);
-        for (int i = 0; i < imgs.length(); i++) {
-            Bitmap bitmap = BitmapFactory.decodeResource(getResources(), imgs.getResourceId(i, -1));
-            imageItems.add(new ImageItem(bitmap, "Image#" + i));
-        }
-        return imageItems;
-    }
 }
