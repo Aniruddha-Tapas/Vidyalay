@@ -15,15 +15,15 @@ An Android App which provides education for everyone from students to women alik
 
 
 <p align="center">
-  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot1.png">
-  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot2.png">
-  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot3.png">
+  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot1.png" height="400" width="225">
+  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot2.png" height="400" width="225">
+  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot3.png" height="400" width="225">
 </p>
 
 <p align="center">
-  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot4.png">
-  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot5.png">
-  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot6.png">
+  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot4.png" height="400" width="225">
+  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot5.png" height="400" width="225">
+  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot6.png" height="400" width="225">
 </p>
 
 
