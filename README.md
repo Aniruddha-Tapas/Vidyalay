@@ -1,6 +1,6 @@
-# Vidyalay
+<hr>
 
-===============
+# Vidyalay
 
 An Android App which provides education for everyone from students to women alike, in Hindi.
 
@@ -11,6 +11,25 @@ An Android App which provides education for everyone from students to women alik
 
 <hr>
 
+###Screenshots:
+
+
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot1.png">
+  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot2.png">
+  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot3.png">
+</p>
+
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot4.png">
+  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot5.png">
+  <img src = "https://raw.githubusercontent.com/Aniruddha-Tapas/Vidyalay/master/Screenshots/Screenshot6.png">
+</p>
+
+
+<hr>
+
+
 ### Coming Soon: 
 * Updated UI 
 * Tutorials for Class 9 - 12
@@ -18,7 +37,7 @@ An Android App which provides education for everyone from students to women alik
 
 <hr>
 
-## To Build the App:
+### To Build the App:
 
 1) Download the latest library from the YouTube developer 
 website at https://developers.google.com/youtube/android/player/ and place
